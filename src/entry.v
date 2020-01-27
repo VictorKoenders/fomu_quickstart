@@ -4,7 +4,6 @@
 
 module entry(
     // These properties are defined in `fomu-pvt.pcf`
-    
     output rgb0,
     output rgb1,
     output rgb2,
