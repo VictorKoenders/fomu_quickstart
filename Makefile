@@ -21,7 +21,7 @@ $(BUILD_DIR)/out.dfu: $(BUILD_DIR)/out.bin
 $(BUILD_DIR)/out.bin: $(BUILD_DIR)/out.asc
 	icepack $(BUILD_DIR)/out.asc $(BUILD_DIR)/out.bin
 
-$(BUILD_DIR)/out.asc: $(BUILD_DIR)/out.json
+$(BUILD_DIR)/out.asc: $(BUILD_DIR)/out.json fomu-pvt.pcf
 	nextpnr-ice40 --up5k --package uwg30 --json $(BUILD_DIR)/out.json --pcf fomu-pvt.pcf --asc $(BUILD_DIR)/out.asc
 
 $(BUILD_DIR)/out.json: $(sources) $(BUILD_DIR)

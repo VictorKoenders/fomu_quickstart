@@ -30,6 +30,10 @@ Run `make` in this project should create an `build` directory. This directory wi
 - `out.bin` - A binary stream of the diagram, created by [icepack](http://www.clifford.at/icestorm/)
 - `out.dfu` - The binary file, but modified so that the [dfu](http://dfu-util.sourceforge.net/) tools can upload it
 
+# Resources
+
+The fomu uses an fpga called "iCE40" [datasheet](http://www.latticesemi.com/~/media/LatticeSemi/Documents/DataSheets/iCE/iCE40LPHXFamilyDataSheet.pdf)
+
 # Cleaning the project
 
 Run `make clean` to clean the project.
