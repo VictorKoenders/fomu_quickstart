@@ -21,6 +21,7 @@ Every time you start a new terminal session, you should run `source env.h` again
 Several good verilog resources exist:
 - Introduction to verilog for beginners: [nandland.com](https://www.nandland.com/verilog/tutorials/tutorial-introduction-to-verilog-for-beginners.html)
 - Simple blink program from the fomu examples: [blink.v](https://github.com/im-tomu/fomu-workshop/blob/master/verilog/blink-expanded/blink.v)
+- Example projects for iCE40 can be found here: [github.com/nesl/ice40_examples](https://github.com/nesl/ice40_examples)
 
 # Building your verilog code
 
