@@ -7,6 +7,11 @@ sources := $(wildcard src/*.v)
 
 all: $(BUILD_DIR)/out.dfu $(BUILD_DIR)/out.bin
 
+flash: all FORCE
+	dfu-util -D $(BUILD_DIR)/out.dfu
+
+FORCE:
+
 clean:
 	rm -rf $(BUILD_DIR)
 

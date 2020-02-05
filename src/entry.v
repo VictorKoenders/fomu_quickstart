@@ -13,4 +13,3 @@ module entry(
     input clock_input
 );
 endmodule
-
