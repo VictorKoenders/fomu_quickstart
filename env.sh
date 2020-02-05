@@ -17,6 +17,7 @@ if [[ ! -d "tools/fomu-toolchain" ]]; then
     echo    # (optional) move to a new line
     if [[ ! $REPLY =~ ^[Yy]$ ]]
     then
+        set +e
         exit 1
     fi
 
@@ -39,6 +40,7 @@ if [[ ! -f /etc/udev/rules.d/99-fomu.rules ]]; then
     echo    # (optional) move to a new line
     if [[ ! $REPLY =~ ^[Yy]$ ]]
     then
+        set +e
         exit 1
     fi
     echo SUBSYSTEM=="usb", ATTRS{idVendor}=="1209", ATTRS{idProduct}=="5bf0", MODE="0664", GROUP="plugdev" | sudo tee /etc/udev/rules.d/99-fomu.rules
@@ -46,3 +48,5 @@ fi
 
 echo export PATH=`pwd`/tools/fomu-toolchain/bin:$PATH
 export PATH=`pwd`/tools/fomu-toolchain/bin:$PATH
+
+set +e
